@@ -4,7 +4,7 @@ echo "enter the field"
 
 read  -s field 
 
-echo "filed entered :: $field"
+echo "filed entered :: $field
 
 echo "please enter the password"
 
