@@ -8,6 +8,6 @@ echo "filed entered :: $field"
 
 echo "please enter the password"
 
-read " Kavya"
+read "Kavya"
 
-echo "your password : $Kavya"
+echo "your password is $Kavya"
