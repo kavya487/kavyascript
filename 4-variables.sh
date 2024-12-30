@@ -10,4 +10,4 @@ echo "please enter the password"
 
 read " Kavya"
 
-echo "your password is $Kavya"
+echo "your password : $Kavya"
