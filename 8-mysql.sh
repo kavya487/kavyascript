@@ -24,12 +24,17 @@ else
        echo "mysql server is already installed"
 fi        
  
- dnf install git -y
- if  [ $? -ne 0 ]
- then 
+dnf list installed git server
+if [ $? -ne 0 ]
+then
+      dnf install git -y
+      if  [ $? -ne 0 ]
+      then 
       echo "installing git... failure"
       exit 1
-else
-
+      else
       echo  "Installing git ... success"
-fi   
+      fi
+else 
+      echo "git is already installed"
+fi
