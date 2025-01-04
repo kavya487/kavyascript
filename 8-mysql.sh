@@ -5,23 +5,25 @@ userid=$(id -u)
 if [ $userid -ne 0 ]
  then 
       echo "error : you must have sudo access to execute this script"
-      exit 1
+      exit1
 fi
 
- dnf install mysql -y
+ dnf install mysqll -y
+
 if  [ $? -ne 0 ]
  then 
-      echo "Error: "installing mysql... failure"
+      echo "installing mysql... failure"
       exit 1
 else
-      echo "Error: "Installing mysql ... success"
+      echo  "Installing mysql ... success"
 fi        
  
  dnf install git -y
  if  [ $? -ne 0 ]
  then 
-      echo "Error: "installing git... failure"
+      echo "installing git... failure"
       exit 1
 else
-      echo "Error: "Installing git ... success"
+
+      echo  "Installing git ... success"
 fi   
