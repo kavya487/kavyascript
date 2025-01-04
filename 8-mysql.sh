@@ -7,4 +7,5 @@ if [ $userid -ne 0 ]
       echo "error : you must have sudo access"
 fi
 
-dnf install mysql -y
+ dnf install mysql -y
+ dnf install git -y
