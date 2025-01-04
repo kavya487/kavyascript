@@ -22,7 +22,7 @@ if [ $userid -ne 0 ]
 fi
 
 dnf list installed mysql server
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then
      dnf install mysql -y
     validate $?  "installing mysql"
