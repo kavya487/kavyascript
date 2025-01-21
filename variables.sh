@@ -1,7 +1,7 @@
 #/bin/bash
 
-Kavya :  "Hello Divya"
-Divya :  "Hi Kavya"
-Kavya : "How are you"
-Divya : "How about you"
+ echo Kavya :  "Hello Divya"
+ echo Divya :  "Hi Kavya"
+ echo Kavya : "How are you"
+ echo Divya : "How about you"
 
