@@ -1,4 +1,4 @@
-#/bin/bash
+
 
  echo Kavya :  "Hello Divya"
  echo Divya :  "Hi Kavya"
