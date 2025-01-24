@@ -6,5 +6,5 @@ echo " esent working directory is $PWD"
 echo  " home directory is $HOME"
 echo "user is running is $USER"
 echo "process id is $$"
-sleep 60 
+sleep 60 &
 echo "process id of last cmd is $!"
