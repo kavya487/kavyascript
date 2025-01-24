@@ -1,5 +1,5 @@
 echo please enter name 
 
-read -s 
+read -s name 
 
 echo name is $name
