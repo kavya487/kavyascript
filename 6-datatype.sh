@@ -2,4 +2,4 @@ a=$1
 b=$2
 
 sum=$(a+b)
- echo value is $sum 
+echo value is $sum 
