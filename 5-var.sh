@@ -7,5 +7,3 @@ echo name is $name
 echo "Please enter your Password"
 
 read -s password
-
-echo password is $password
