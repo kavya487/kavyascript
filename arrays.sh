@@ -3,5 +3,5 @@
 
    echo list of array is ${Movies[1]}
    
-   echo list of array is ${Movie
+   echo list of array is ${Movies[2]}
    echo full list arrays ${Movies[@]}
