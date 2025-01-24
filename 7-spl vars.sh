@@ -1,0 +1,10 @@
+echo "no of variables $#"
+echo "all vars passed $@"
+echo " script name is $0"
+echo "user name is $user"
+echo " esent working directory is $PWD"
+echo  " home directory is $HOME"
+echo "user is running is $USER"
+echo "process id is $$"
+sleep 60 
+echo "process id of last cmd is $!"
