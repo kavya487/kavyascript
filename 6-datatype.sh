@@ -1,4 +1,4 @@
-a=4
-b=7
+a=$1
+b=$2
 sum=$(($a+$b))
 echo value is $sum 
