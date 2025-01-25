@@ -1,7 +1,7 @@
 #!bin/bash
 
-sunday=$1
-if (Day==$sunday)
+Today=$1
+if (Sunday==$Today)
 then
 echo Print today is holiday
 else 
