@@ -9,13 +9,21 @@ if [ $userid -ne 0 ]
     fi
 
 dnf install mysql -y
+if [ $? -ne 0 ]
 then 
-   echo "installing myscript"
-   fi
+   echo " not installing myscript"
+   exit 1
+else 
+    echo "install mysql"
+fi
 
 
 dnf install git -y
+if [ $? -ne 0 ]
 then 
-   echo "installing git"
-   fi
+   echo " not installing myscript"
+   exit 1
+else 
+    echo "install mysql"
+fi
 
