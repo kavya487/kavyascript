@@ -1,9 +1,9 @@
 #!?bin/bash
 
-if userid=$(id -u)
+ userid=$(id -u)
+if [ $userid -ne 0 ]
 then
 echo "User is having access to install script"
-
-else 
-echo "user is not having root access"
 fi
+
+dnf install mysql -y
