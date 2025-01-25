@@ -8,7 +8,7 @@ if [ $userid -ne 0 ]
     exit 1
     fi
 
-dnf install mysqll -y
+dnf install mysql -y
 then 
    echo "installing myscript"
    fi
