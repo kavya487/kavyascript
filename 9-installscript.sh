@@ -4,7 +4,7 @@
 if [ $userid -ne 0 ]
 then
 echo "User is  not having access to install script"
-exit 11
+exit 0
 fi
 
 dnf install mysqll -y
