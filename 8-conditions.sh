@@ -1,5 +1,5 @@
 #!/bin/bash
-NUM=$!
+NUM=$1
 if [ NUM -gt 100 ] 
 then 
 echo "given num is greater than 100"
