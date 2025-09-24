@@ -8,10 +8,10 @@ then
     exit 1
 fi
 
-# log_folder="/var/logs/shellscript-logs"
-# log_file= $(echo $0 | cut -d "." -f1)
-# timestamp=$(date +Y-m-D-H-M-S)
-# log_file_name=$((log-folder)/$(log-file)-timestamp.log)
+log_folder="/var/logs/shellscript-logs"
+log_file= $(echo $0 | cut -d "." -f1)
+timestamp=$(date +Y-m-D-H-M-S)
+log_file_name=$((log-folder)/$(log-file)-timestamp.log)
 
 # echo "script was executed   at $timestamp"
 
