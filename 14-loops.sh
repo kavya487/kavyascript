@@ -5,7 +5,7 @@ uid=$(id -u)
 log_folder="/var/log/shellscript-logs"
 log_file=$(echo $0 | cut -d "." -f1)
 timestamp=$(date +%Y-%m-%d-%H-%M-%S)
-log_file_name="$log_folder/$log-file-timestamp.log"
+log_file_name="$log_folder/$log_file-$timestamp.log"
 
 if [ $uid -ne 0 ]
 then
