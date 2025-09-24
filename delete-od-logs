@@ -15,20 +15,20 @@ log_file_name="$log_folder/$log_file-$timestamp.log"
 
 echo "script was executed   at $timestamp"
 
-# dnf list installed mysql >>$logfile_name
+dnf list installed mysql >>$logfile_name
 
-# if [$? -ne 0]
-# then
-# dnf install mysql -y
-#     if [$? -ne 0]
-#     then
-#     echo "mysql was not installed" >>$log_file_name
-#     exit 1
-#     else
-#     echo "mysql was installed"
-#     fi
-# else
-# echo "mysql was already installed" >>$log_file_name
-# fi
+if [$? -ne 0]
+then
+dnf install mysql -y
+    if [$? -ne 0]
+    then
+    echo "mysql was not installed" >>$log_file_name
+    exit 1
+    else
+    echo "mysql was installed"
+    fi
+else
+echo "mysql was already installed" >>$log_file_name
+fi
 
 
