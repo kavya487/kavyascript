@@ -27,3 +27,11 @@ else
     echo "install mysql"
 fi
 
+
+
+var= "/var/log/log.sh"
+
+if [ -e = var  ] then
+echo  "file exists"
+else
+ echo 
