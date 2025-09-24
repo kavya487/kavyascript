@@ -13,7 +13,7 @@ log_file=$(echo $0 | cut -d "." -f1)
 timestamp=$(date +%Y-%m-%D-%H-%M-%S)
 log_file_name="$log_folder/$log_file-$timestamp.log"
 
-# echo "script was executed   at $timestamp"
+echo "script was executed   at $timestamp"
 
 # dnf list installed mysql >>$logfile_name
 
