@@ -18,16 +18,16 @@ echo "script was executed at  $log_file_name"
 for package in $@
 do
 
-dnf list installed $package >>$log_file_name
+dnf list installed $package &>>$log_file_name
 if 
 [ $? -ne 0 ]
 then
 dnf install $package -y
        if [ $? -ne 0 ]
         then 
-        echo "$package was not installed" >>$log_file_name
+        echo "$package was not installed" &>>$log_file_name
         else
-        echo "$package was installed successfully" >>$log_file_name
+        echo "$package was installed successfully" &>>$log_file_name
         fi
 else
 echo "$package was already installed"
