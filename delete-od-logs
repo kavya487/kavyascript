@@ -28,7 +28,7 @@ dnf install mysql -y
     echo "mysql was installed"
     fi
 else
-echo "mysql was already installed" >>$log_file_name
+echo "mysql was already installed" 
 fi
 
 
