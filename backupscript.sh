@@ -1,8 +1,8 @@
-archive the logs 
+# archive the logs 
 
-create soirce dir 
-dest dir 
-days
+# create soirce dir 
+# dest dir 
+# days
 
 
 source_dir=$1
