@@ -40,6 +40,19 @@ then
     echo "files are $files"
         zip_file="$dest_dir/shellscript-logs-$timestamp.zip"
         find $source_dir -name "*.log" -mtime +$days | zip -@ "$zip_file"
+        if [ -f "$zip_file"]
+        then
+            echo "successfully created zip older than $days"
+            while read -r filepath
+            do
+                echo "deleting filepath"
+                rm -rf "$filpath"
+                echo "$filepath succesfully deleted" 
+            done
+        
+                else
+            echo "zip files are not created successfully"
+            exit 1 
 else
     echo "no files found older than $days"
 fi
