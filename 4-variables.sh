@@ -1,8 +1,19 @@
+#!/bin/bash
 
-PERSON1=$1
-PERSON2=$2
+source_dir=$1
 
- echo $PERSON1::"Hello $PERSON2"
- echo $PERSON2:"Hi $PERSON1"
- echo $PERSON1:"w are you"
- echo $PERSON2:"How about you"
+if  [ $# -lt 1 ]
+then
+    echo "usage: $0 <source-dir>"
+    exit 1
+fi
+
+if [ ! -d "$source_dir" ]
+then
+    echo "Please provde valid path of dir"
+    exit 1
+fi
+
+large_file=$(du -sh \kavyascript -type f | sort -rh | head -n 1)
+
+echo "largest file is $large_file"
