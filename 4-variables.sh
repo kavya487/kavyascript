@@ -8,12 +8,12 @@ then
     exit 1
 fi
 
-if [ ! -d "$source_dir" ]
-then
-    echo "Please provde valid path of dir"
-    exit 1
-fi
+# if [ ! -d "$source_dir" ]
+# then
+#     echo "Please provde valid path of dir"
+#     exit 1
+# fi
 
-large_file=$(du -sh .\kavyascript -type f | sort -rh | head -n 1)
+large_file=$(du -sh \ -type f | sort -rh | head -n 1)
 
 echo "largest file is $large_file"
