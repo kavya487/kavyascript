@@ -21,13 +21,13 @@ timestamp=$(date +%Y-%m-%d)
 log_file_name="$log_folder/$log_file-$timestamp.log"
 
 mkdir -p /home/ec2-user/shellscript-logs
-if [ -d ! $source_dir ]
+if [  ! -d  $source_dir ]
 then
     echo "please provide valid source path"
     exit 1
 fi
 
-if [ -d ! $dest_dir ]
+if [ ! -d ! $dest_dir ]
 then
     echo "please provide valid dest path"
     exit 1
