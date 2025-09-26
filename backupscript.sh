@@ -48,7 +48,7 @@ then
                 echo "deleting filepath" &>> $log_file_name
                 rm -rf "$filepath"
                 echo "filepath succesfully deleted" 
-            done
+            done <<< $files
         
                 else
             echo "zip files are not created successfully"
@@ -56,6 +56,7 @@ then
             fi
 else
     echo "no files found older than $days"
+    exit 1
 fi
 
 
