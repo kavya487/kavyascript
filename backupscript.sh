@@ -35,7 +35,7 @@ fi
 
 files=$(find $source_dir -name "*.log" -mtime +$days)
 
-if [ -n $files ]
+if [ -n "$files" ]
 then
     echo "files are $files"
 else
