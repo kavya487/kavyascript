@@ -33,3 +33,5 @@ then
     exit 1
 fi
 
+files=$(find $source_dir -name "*.log" -mtime +$days)
+
