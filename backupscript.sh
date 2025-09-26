@@ -47,7 +47,7 @@ then
             do
                 echo "deleting filepath" &>> $log_file_name
                 rm -rf "$filepath"
-                echo "$filepath succesfully deleted" 
+                echo "filepath succesfully deleted" 
             done
         
                 else
