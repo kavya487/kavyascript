@@ -3,7 +3,7 @@ b=$2
 
 if [ $# -lt 2 ]
 then
-    echo "please provide sh scriptnmae <1number> <number2>"
+    echo "please provide $0 <1number> <number2>"
     exit 1 
 fi
 
