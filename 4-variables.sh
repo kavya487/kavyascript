@@ -14,6 +14,6 @@ then
     exit 1
 fi
 
-large_file=$(du -sh \kavyascript -type f | sort -rh | head -n 1)
+large_file=$(du -sh .\kavyascript -type f | sort -rh | head -n 1)
 
 echo "largest file is $large_file"
