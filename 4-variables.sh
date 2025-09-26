@@ -1,12 +1,12 @@
-#!/bin/bash
+# #!/bin/bash
 
-source_dir=$1
+# source_dir=$1
 
-if  [ $# -lt 1 ]
-then
-    echo "usage: $0 <source-dir>"
-    exit 1
-fi
+# if  [ $# -lt 1 ]
+# then
+#     echo "usage: $0 <source-dir>"
+#     exit 1
+# fi
 
 # if [ ! -d "$source_dir" ]
 # then
@@ -16,4 +16,4 @@ fi
 
 large_file=$(du -sh \ -type f | sort -rh | head -n 1)
 
-echo "largest file is $large_file"
+echo "largest file is large_file"
