@@ -38,6 +38,10 @@ files=$(find $source_dir -name "*.log" -mtime +$days)
 if [ -n "$files" ]
 then
     echo "files are $files"
+        zip_file="$dest_dir/shellscript-logs-$timestamp.zip"
+        find $source_dir -name "*.log" -mtime +$days | zip -@ "$zip_file"
 else
     echo "no files found older than $days"
 fi
+
+
