@@ -27,7 +27,7 @@ then
     exit 1
 fi
 
-if [ ! -d ! $dest_dir ]
+if [ ! -d  $dest_dir ]
 then
     echo "please provide valid dest path"
     exit 1
